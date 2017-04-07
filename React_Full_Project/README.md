@@ -1,6 +1,6 @@
 Sidebeep Button command list
 
-Type :
+Type
 - primary
 - secondary
 - success
@@ -45,7 +45,7 @@ SocialName
 - foursquare
 - vimeo
 
-Social Type
+SocialType
 - icon (icon only)
 - text (text only | only overrides background)
 
@@ -58,7 +58,11 @@ isActive
 isDisabled
 - true
 
+Sidebeep Switch command list
 
+Sidebeep Cards command list
+
+------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

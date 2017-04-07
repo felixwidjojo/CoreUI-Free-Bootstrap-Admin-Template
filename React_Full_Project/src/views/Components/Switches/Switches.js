@@ -13,7 +13,9 @@ class Switches extends Component {
                 3d Switch
               </div>
               <div className="card-block">
-                <SidebeepSwitch Category="default"></SidebeepSwitch>
+                
+                <SidebeepSwitch Category="text" Type="primary" textOn="asd" textOff="dsa" ></SidebeepSwitch>
+
                 <label className="switch switch-3d switch-primary">
                   <input type="checkbox" className="switch-input" defaultChecked/>
                   <span className="switch-label"></span>
@@ -558,7 +560,7 @@ class Switches extends Component {
               <div className="card-block">
                 <label className="switch switch-text switch-pill switch-primary-outline-alt">
                   <input type="checkbox" className="switch-input" defaultChecked/>
-                  <span className="switch-label" data-on="On" data-off="Off"></span>
+                  <span className="switch-label" data-on="&On" data-off="Off"></span>
                   <span className="switch-handle"></span>
                 </label>
                 &nbsp;&nbsp;&nbsp;
@@ -601,6 +603,7 @@ class Switches extends Component {
                 Switch with icon
               </div>
               <div className="card-block">
+                <SidebeepSwitch Category="text" Type="primary" Outline="yes" Alt="yes" textOn="&#xf00d" textOff="d%s" />
                 <label className="switch switch-icon switch-primary">
                   <input type="checkbox" className="switch-input" defaultChecked/>
                   <span className="switch-label" data-on="&#xf00c" data-off="&#xf00d"></span>
