@@ -5,6 +5,10 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Full from './containers/Full/'
 import Simple from './containers/Simple/'
 
+import SidebeepButtons from './views/Components/SidebeepButtons/'
+import SidebeepCards from './views/Components/SidebeepCards/'
+import SidebeepSwitch from './views/Components/SidebeepSwitch/'
+
 import Charts from './views/Charts/'
 import Dashboard from './views/Dashboard/'
 import Buttons from './views/Components/Buttons/'
@@ -23,6 +27,8 @@ import Page404 from './views/Pages/Page404/'
 import Page500 from './views/Pages/Page500/'
 import Widgets from './views/Widgets/'
 
+
+
 export default (
   <Router history={hashHistory}>
     <Route path="/" name="Home" component={Full}>
@@ -30,8 +36,11 @@ export default (
       <Route path="dashboard" name="Dashboard" component={Dashboard}/>
       <Route path="components/" name="Components">
         <IndexRoute component={Buttons}/>
+        <Route path="sidebeepbuttons" name="Sidebeep Buttons" component={SidebeepButtons}/>
+        <Route path="sidebeepcards" name="Sidebeep Cards" component={SidebeepCards}/>
+        <Route path="sidebeepswitch" name="Sidebeep Switch" component={SidebeepSwitch}/>
         <Route path="buttons" name="Buttons" component={Buttons}/>
-        <Route path="cards" name="Cards" component={Cards}/>
+        <Route path="cards" name="Cards" component={Cards}/>  
         <Route path="forms" name="Forms" component={Forms}/>
         <Route path="modals" name="Modals" component={Modals}/>
         <Route path="social-buttons" name="Social Buttons" component={SocialButtons}/>

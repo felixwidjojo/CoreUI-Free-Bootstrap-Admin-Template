@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SidebeepSwitch from '../SidebeepSwitch';
 
 class Switches extends Component {
   render() {
@@ -12,6 +13,7 @@ class Switches extends Component {
                 3d Switch
               </div>
               <div className="card-block">
+                <SidebeepSwitch Category="default"></SidebeepSwitch>
                 <label className="switch switch-3d switch-primary">
                   <input type="checkbox" className="switch-input" defaultChecked/>
                   <span className="switch-label"></span>
@@ -935,7 +937,7 @@ class Switches extends Component {
                         </label>
                       </td>
                       <td>
-                        Add following class <code>.switch-sm</code>
+                        Add following class <code>.switch-xs</code>
                       </td>
                     </tr>
                   </tbody>

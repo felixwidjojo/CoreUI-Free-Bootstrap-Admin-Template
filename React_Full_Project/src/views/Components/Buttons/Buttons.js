@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
-
+import SidebeepButtons from '../SidebeepButtons/';
 class Buttons extends Component {
+
+
   render() {
     return (
       <div className="animated fadeIn">
         <div className="row">
+          <div className="col-md-12">
+             <div className="card">
+              <div className="card-header">
+                <strong>Sidebeep</strong>
+              </div>
+              <div className="card-block">
+                <SidebeepButtons Type="primary" Size="lg" >ASDasd</SidebeepButtons>
+              </div>
+            </div>
+            
+          </div>
           <div className="col-md-6">
             <div className="card">
               <div className="card-header">
@@ -51,6 +64,7 @@ class Buttons extends Component {
                 <strong>Size Small</strong> <small>Add this class <code>.btn-sm</code></small>
               </div>
               <div className="card-block">
+                <SidebeepButtons Type="primary" Size="sm" >ASDasd</SidebeepButtons>
                 <button type="button" className="btn btn-primary btn-sm">Primary</button>
                 <button type="button" className="btn btn-secondary btn-sm">Secondary</button>
                 <button type="button" className="btn btn-success btn-sm">Success</button>
@@ -161,7 +175,7 @@ class Buttons extends Component {
               <div className="card-block">
                 <button type="button" className="btn btn-outline-primary" disabled="disabled">Primary</button>
                 <button type="button" className="btn btn-outline-secondary" disabled="disabled">Secondary</button>
-                <button type="button" className="btn btn-success" disabled="disabled">Success</button>
+                <button type="button" className="btn btn-outline-success" disabled="disabled">Success</button>
                 <button type="button" className="btn btn-outline-info" disabled="disabled">Info</button>
                 <button type="button" className="btn btn-outline-warning" disabled="disabled">Warning</button>
                 <button type="button" className="btn btn-outline-danger" disabled="disabled">Danger</button>

@@ -1,3 +1,64 @@
+Sidebeep Button command list
+
+Type :
+- primary
+- secondary
+- success
+- warning
+- danger
+- link
+- outline-primary
+- outline-secondary
+- outline-success
+- outline-warning
+- outline-danger
+
+Size
+- lg
+- md
+- sm
+
+SocialName
+- facebook
+- twitter
+- linkedin
+- flickr
+- tumblr
+- xing
+- github
+- html5
+- openid
+- stack-overflow
+- css3
+- youtube
+- dribbble
+- google-plus
+- instagram
+- pinterest
+- vk
+- yahoo
+- behance
+- dropbox
+- reddit
+- spotify
+- vine
+- foursquare
+- vimeo
+
+Social Type
+- icon (icon only)
+- text (text only | only overrides background)
+
+Block
+- block
+
+isActive 
+- true
+
+isDisabled
+- true
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

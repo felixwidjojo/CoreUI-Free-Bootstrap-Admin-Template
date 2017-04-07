@@ -31,6 +31,7 @@ class Sidebar extends Component {
             <li className={this.activeRoute("/components")}>
               <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="icon-puzzle"></i> Components</a>
               <ul className="nav-dropdown-items">
+
                 <li className="nav-item">
                   <Link to={'/components/buttons'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Buttons</Link>
                 </li>

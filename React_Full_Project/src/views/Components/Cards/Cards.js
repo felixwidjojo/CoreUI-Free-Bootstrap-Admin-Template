@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import SidebeepCards from '../SidebeepCards/';
 
 class Cards extends Component {
   render() {
     return (
       <div className="animated fadeIn">
+        <SidebeepCards columnMedium="12" Title="Cardddddd" Icon="check" >Lorem ipsum dolor sit amet</SidebeepCards>
         <div className="row">
           <div className="col-sm-6 col-md-4">
             <div className="card">
@@ -12,7 +14,7 @@ class Cards extends Component {
               </div>
               <div className="card-block">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-              </div>
+              </div>  
             </div>
           </div>
           <div className="col-sm-6 col-md-4">

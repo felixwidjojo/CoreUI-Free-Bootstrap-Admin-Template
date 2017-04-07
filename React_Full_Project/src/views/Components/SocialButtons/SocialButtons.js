@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SidebeepButtons from '../SidebeepButtons/'
 class SocialButtons extends Component {
   render() {
     return (
@@ -13,6 +13,7 @@ class SocialButtons extends Component {
               <div className="card-block">
                 <h6>Size Small <small>Add this class <code>.btn-sm</code></small></h6>
                 <p>
+                  <SidebeepButtons Type="primary" Size="sm" >ASDasd</SidebeepButtons>
                   <button type="button" className="btn btn-sm btn-facebook"><span>Facebook</span></button>
                   <button type="button" className="btn btn-sm btn-twitter"><span>Twitter</span></button>
                   <button type="button" className="btn btn-sm btn-linkedin"><span>LinkedIn</span></button>
