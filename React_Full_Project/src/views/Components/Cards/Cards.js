@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import SidebeepCards from '../SidebeepCards/';
 
+
 class Cards extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <SidebeepCards columnMedium="12" Title="Cardddddd" Icon="check" >Lorem ipsum dolor sit amet</SidebeepCards>
         <div className="row">
+          <SidebeepCards ColumnMedium="12" ColumnLarge="12" Title="Cardddddd" Icon="check" Badge >Lorem ipsum dolor sit amet</SidebeepCards>
+
           <div className="col-sm-6 col-md-4">
             <div className="card">
               <div className="card-header">

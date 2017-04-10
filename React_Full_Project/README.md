@@ -60,7 +60,122 @@ isDisabled
 
 Sidebeep Switch command list
 
+Category
+- 3d
+- default
+- text
+- icon
+
+Type
+- primary
+- secondary
+- success
+- warning
+- info
+- danger
+- outline-primary
+- outline-secondary
+- outline-success
+- outline-warning
+- outline-info
+- outline-danger
+- outline-primary-alt
+- outline-secondary-alt
+- outline-success-alt
+- outline-warning-alt
+- outline-info-alt
+- outline-danger-alt
+
+Size
+- lg
+- md
+- sm
+- xs
+
+Pill 
+- yes
+
+Float 
+- right
+- left
+
+
 Sidebeep Cards command list
+
+Can add Badge, Icon, Switch
+
+ColumnLarge, ColumnMedium, ColumnSmall
+- 1 until 12
+
+Type
+- primary
+- secondary
+- success
+- warning
+- info
+- danger
+- outline-primary
+- outline-secondary
+- outline-success
+- outline-warning
+- outline-info
+- outline-danger
+- accent-primary
+- accent-secondary
+- accent-success
+- accent-warning
+- accent-info
+- accent-danger
+
+CenterText
+- yes
+
+Inverse 
+- yes
+
+Icon
+- from font awesome
+
+SwitchCategory
+- 3d
+- default
+- text
+- icon
+
+SwitchType
+- primary
+- secondary
+- success
+- warning
+- info
+- danger
+- outline-primary
+- outline-secondary
+- outline-success
+- outline-warning
+- outline-info
+- outline-danger
+- outline-primary-alt
+- outline-secondary-alt
+- outline-success-alt
+- outline-warning-alt
+- outline-info-alt
+- outline-danger-alt
+
+SwitchSize
+- lg
+- md
+- sm
+- xs
+
+SwitchPill 
+- yes
+
+SwitchFloat 
+- right
+- left
+
+
 
 ------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

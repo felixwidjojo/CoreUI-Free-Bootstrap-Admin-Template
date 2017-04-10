@@ -50,7 +50,7 @@ class SidebeepSwitch extends Component {
 
         //for Cards, Tables, Tabs
         if (this.props.Float != null) {
-            classSwitch += ` switch-${this.props.Float}`;
+            classSwitch += ` float-${this.props.Float}`;
         }
 
 

@@ -14,7 +14,7 @@ class Switches extends Component {
               </div>
               <div className="card-block">
                 
-                <SidebeepSwitch Category="text" Type="primary" textOn="asd" textOff="dsa" ></SidebeepSwitch>
+                <SidebeepSwitch Category="text" Pill="yes" Type="primary" textOn="asd" textOff="dsa" ></SidebeepSwitch>
 
                 <label className="switch switch-3d switch-primary">
                   <input type="checkbox" className="switch-input" defaultChecked/>
@@ -560,7 +560,7 @@ class Switches extends Component {
               <div className="card-block">
                 <label className="switch switch-text switch-pill switch-primary-outline-alt">
                   <input type="checkbox" className="switch-input" defaultChecked/>
-                  <span className="switch-label" data-on="&On" data-off="Off"></span>
+                  <span className="switch-label" data-on="On" data-off="Off"></span>
                   <span className="switch-handle"></span>
                 </label>
                 &nbsp;&nbsp;&nbsp;
