@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import SidebeepForms from '../SidebeepForms';
+import SidebeepInput from '../SidebeepInput';
 
 class Forms extends Component {
   render() {
     return (
       <div className="animated fadeIn">
+        
         <div className="row">
           <div className="col-sm-6">
             <div className="card">
@@ -14,7 +17,6 @@ class Forms extends Component {
                 <div className="row">
 
                   <div className="col-sm-12">
-
                     <div className="form-group">
                       <label htmlFor="name">Name</label>
                       <input type="text" className="form-control" id="name" placeholder="Enter your name"/>
@@ -32,7 +34,11 @@ class Forms extends Component {
                       <label htmlFor="ccnumber">Credit Card Number</label>
                       <input type="text" className="form-control" id="ccnumber" placeholder="0000 0000 0000 0000"/>
                     </div>
-
+                    <SidebeepForms Row="yes"  LabelColumn="3" TitleFor="asd" Title="ASD">
+                      <SidebeepInput Placeholder="asd goods" InputType="text" ID="asd" name="asd"  />
+                    </SidebeepForms>
+                     
+                    
                   </div>
 
                 </div>

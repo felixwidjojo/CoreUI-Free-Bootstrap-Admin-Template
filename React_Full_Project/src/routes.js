@@ -8,6 +8,8 @@ import Simple from './containers/Simple/'
 import SidebeepButtons from './views/Components/SidebeepButtons/'
 import SidebeepCards from './views/Components/SidebeepCards/'
 import SidebeepSwitch from './views/Components/SidebeepSwitch/'
+import SidebeepForms from './views/Components/SidebeepForms/'
+import SidebeepInput from './views/Components/SidebeepInput/'
 
 import Charts from './views/Charts/'
 import Dashboard from './views/Dashboard/'
@@ -39,6 +41,8 @@ export default (
         <Route path="sidebeepbuttons" name="Sidebeep Buttons" component={SidebeepButtons}/>
         <Route path="sidebeepcards" name="Sidebeep Cards" component={SidebeepCards}/>
         <Route path="sidebeepswitch" name="Sidebeep Switch" component={SidebeepSwitch}/>
+        <Route path="sidebeepform" name="Sidebeep Forms" component={SidebeepForms}/>
+        <Route path="sidebeepinput" name="Sidebeep Input" component={SidebeepInput}/>
         <Route path="buttons" name="Buttons" component={Buttons}/>
         <Route path="cards" name="Cards" component={Cards}/>  
         <Route path="forms" name="Forms" component={Forms}/>
