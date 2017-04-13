@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SidebeepInput from '../SidebeepInput';
 
 class SidebeepForms extends Component {
     
@@ -16,7 +17,7 @@ class SidebeepForms extends Component {
 
         let formClass = `form-group`;
         let labelClass = `form-control-label`;
-        let inputClass = `form-control`;
+        let inputClass = ``;
         let isDisabled = 'false';
 
         if(this.props.Row == 'yes'){
@@ -31,13 +32,12 @@ class SidebeepForms extends Component {
             inputClass += ` col-md-${InputColumn}`;
         }
 
-        
-        
-
         return(
             <div className={formClass}>
                 <label className={labelClass} htmlFor={TitleFor}>{Title}</label>
-                {this.props.children}
+                <div className={inputClass}>
+                    {this.props.children}
+                </div>
             </div>
         );
     }
