@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import SidebeepForms from '../SidebeepForms';
 import SidebeepInput from '../SidebeepInput';
+import SidebeepRadio from '../SidebeepRadio';
+import SidebeepImageInput from '../SidebeepImageInput';
 
 class Forms extends Component {
   render() {
@@ -34,8 +36,11 @@ class Forms extends Component {
                       <label htmlFor="ccnumber">Credit Card Number</label>
                       <input type="text" className="form-control" id="ccnumber" placeholder="0000 0000 0000 0000"/>
                     </div>
-                    <SidebeepForms Row="yes"  LabelColumn="3" TitleFor="asd" Title="ASD">
-                      <SidebeepInput InputPlaceholder="asd goods" InputType="text" InputID="asd" InputName="asd"  />
+                    <SidebeepForms Row="true" LabelColumn="3" InputColumn="9" TitleFor="asd" Title="ASD">
+                      <SidebeepInput Placeholder="asd goods" Type="text" ID="asd" Name="asd" isDisabled="false"  />
+                      <SidebeepRadio ID="asd" Name="asd" Value="asdasd" Title="asdasd" Inline="true"  />
+                      <SidebeepRadio ID="asd" Name="asd" Value="asdasd" Title="asdasd" Inline="true" />
+                      <SidebeepImageInput Type="file" ID="asd" Name="asd" isMultiple="true" />
                     </SidebeepForms>
                      
                     
@@ -318,14 +323,12 @@ class Forms extends Component {
                       <label className="checkbox-inline" htmlFor="inline-checkbox3">
                         <input type="checkbox" id="inline-checkbox3" name="inline-checkbox3" value="option3"/>Three
                       </label>
-                      <SidebeepInput CheckType="checkbox" CheckID="check1" CheckTitle="asdasd" />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label className="col-md-3 form-control-label" htmlFor="file-input">File input</label>
                     <div className="col-md-9">
                       <input type="file" id="file-input" name="file-input"/>
-                      <SidebeepInput ImageType="file" ImageID="image" />
                     </div>
                   </div>
                   <div className="form-group row">

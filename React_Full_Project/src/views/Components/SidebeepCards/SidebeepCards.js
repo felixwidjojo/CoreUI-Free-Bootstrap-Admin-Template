@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import SidebeepSwitch from '../SidebeepSwitch/';
 
 class SidebeepCards extends Component {
 
     renderIcon(){
-        const   
-            {
-                Icon,
-            }
-            = this.props
 
         let iconClass = `fa`;
 
         if (this.props.Icon != null) {
-            iconClass += ` fa-${Icon}`;
+            iconClass += ` fa-${this.props.Icon}`;
         }
          
         return(
@@ -25,103 +21,71 @@ class SidebeepCards extends Component {
     }
 
     renderSwitch(){
-        const
-            {
-                SwitchCategory,
-                SwitchType,
-                SwitchSize,
-                SwitchPill,
-                SwitchFloat,
 
-            }
-            = this.props
         return(
             this.props.SwitchCategory == null && (this.props.SwitchSize == null || this.props.SwitchType == null || this.props.SwitchPill == null || this.props.SwitchFloat == null)  ?
             ''
             :
-            <SidebeepSwitch Category={SwitchCategory} Type={SwitchType} Size={SwitchSize} Pill={SwitchPill} Float={SwitchFloat} />
+            <SidebeepSwitch Category={this.props.SwitchCategory} Type={this.props.SwitchType} Size={this.props.SwitchSize} Pill={this.props.SwitchPill} Float={this.props.SwitchFloat} />
         );
     }
 
     renderBadge(){
-        const
-            {
-                BadgeType,
-                BadgePill,
-                BadgeFloat,
-            }
-            = this.props
 
             let badgeClass = `badge`;
 
             if (this.props.BadgeType != null) {
-                badgeClass += ` badge-${BadgeType}`;
+                badgeClass += ` badge-${this.props.BadgeType}`;
             }
-            if (this.props.BadgePill == 'yes') {
+            if (this.props.BadgePill === 'true') {
                 badgeClass += ` badge-pill`;
             }
             if (this.props.BadgeFloat != null) {
-                badgeClass += ` float-${BadgeFloat}`;
+                badgeClass += ` float-${this.props.BadgeFloat}`;
             }
 
         return(
             this.props.BadgeType == null && (this.props.Pill == null || this.props.Pill == null) ?
             ''
             :
-            <span className={badgeClass}>Success</span>
+            <span className={badgeClass}>{this.props.BadgeTitle}</span>
         );
     }
 
     render() {
-        const   
-            {
-                ColumnXtraSmall,
-                ColumnSmall,
-                ColumnMedium,
-                ColumnLarge,
-                Type,
-                Title,
-                Inverse,
-                CenterText,
-            }
-            = this.props
             
             let cardClassColumn = ``;
             let cardClass = `card `;
             
             if (this.props.ColumnXtraSmall != null) {
-                cardClassColumn += ` col-xs-${ColumnXtraSmall}`;
+                cardClassColumn += ` col-xs-${this.props.ColumnXtraSmall}`;
             }
             if (this.props.ColumnSmall != null) {
-                cardClassColumn += ` col-sm-${ColumnSmall}`;
+                cardClassColumn += ` col-sm-${this.props.ColumnSmall}`;
             }
             if (this.props.ColumnMedium != null) {
-                cardClassColumn += ` col-md-${ColumnMedium}`;
+                cardClassColumn += ` col-md-${this.props.ColumnMedium}`;
             }
             if (this.props.ColumnLarge != null) {
-                cardClassColumn += ` col-lg-${ColumnLarge}`;
+                cardClassColumn += ` col-lg-${this.props.ColumnLarge}`;
             }
 
-            if (this.props.Type != null) {
-                cardClass += ` card-${Type}`;
+            if (this.props.ColorType != null) {
+                cardClass += ` card-${this.props.ColorType}`;
             }
-            if (this.props.Inverse == 'yes') {
+            if (this.props.Inverse === 'true') {
                 cardClass += ` card-inverse`;
             }
-            if (this.props.CenterText == 'yes') {
+            if (this.props.CenterText === 'true') {
                 cardClass += ` text-center`;
             }
-
-
-
-
 
         return (
             <div className={cardClassColumn}>
                 <div className={cardClass}>
                     <div className="card-header">
                     {this.renderIcon()}
-                    {Title}
+                    {this.props.Title}
                     {this.renderSwitch()}
                     {this.renderBadge()}
                     </div>
@@ -132,6 +96,28 @@ class SidebeepCards extends Component {
             </div>
         );
     }
+}
+
+SidebeepCards.PropTypes = 
+{
+    Title : PropTypes.string.isRequired,
+    ColorType : PropTypes.string.isRequired,
+    ColumnXtraSmall : PropTypes.string,
+    ColumnSmall : PropTypes.string,
+    ColumnMedium : PropTypes.string,
+    ColumnLarge : PropTypes.string,
+    Inverse : PropTypes.string,
+    CenterText : PropTypes.string,
+    Icon : PropTypes.string,
+    BadgeType : PropTypes.string,
+    BadgePill : PropTypes.string,
+    BadgeFloat : PropTypes.string,
+    BadgeTitle : PropTypes.string,
+    SwitchCategory : PropTypes.string,
+    SwitchType : PropTypes.string,
+    SwitchSize : PropTypes.string,
+    SwitchPill : PropTypes.string,
+    SwitchFloat : PropTypes.string,
 }
 
 export default SidebeepCards;

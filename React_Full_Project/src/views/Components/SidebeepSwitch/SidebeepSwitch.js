@@ -1,25 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class SidebeepSwitch extends Component {
 
 
 
     render() {
-
-        const   
-        {
-            Category,
-            Size,
-            Type,
-            Pill,
-            Outline,
-            Alt,
-            textOn,
-            textOff,
-            withIcon,
-            Float
-        }
-        = this.props
         
         let classSwitch = `switch`;
 
@@ -32,17 +18,17 @@ class SidebeepSwitch extends Component {
         }
 
         //nested checker for Outline and Alt modifier for Type
-        if(this.props.Type != null && this.props.Outline == 'yes' && this.props.Alt == 'yes'){
-            classSwitch += ` switch-${this.props.Type}-outline-alt`;
-        }else if(this.props.Type != null && this.props.Outline == 'yes'){
-            classSwitch += ` switch-${this.props.Type}-outline`;
-        }else if(this.props.Type != null){
-            classSwitch += ` switch-${this.props.Type}`;
+        if(this.props.ColorType != null && this.props.Outline === 'true' && this.props.Alt === 'true'){
+            classSwitch += ` switch-${this.props.ColorType}-outline-alt`;
+        }else if(this.props.ColorType != null && this.props.Outline === 'true'){
+            classSwitch += ` switch-${this.props.ColorType}-outline`;
+        }else if(this.props.ColorType != null){
+            classSwitch += ` switch-${this.props.ColorType}`;
         }
 
 
-        // yes or (others and null)
-        if (this.props.Pill == 'yes') {
+        // true or (others and null)
+        if (this.props.Pill === 'true') {
             classSwitch += ` switch-pill`;
         }else{
             classSwitch += ``;
@@ -59,11 +45,25 @@ class SidebeepSwitch extends Component {
         return (
             <label className={classSwitch}>
                 <input type="checkbox" className="switch-input" defaultChecked/>
-                <span className="switch-label" data-on={textOn} data-off={textOff}></span>
+                <span className="switch-label" data-on={this.props.textOn} data-off={this.props.textOff}></span>
                 <span className="switch-handle"></span>
             </label>
         )
     }
+}
+
+SidebeepSwitch.PropTypes = 
+{
+    Category : PropTypes.string.isRequired,
+    Size : PropTypes.string,
+    ColorType : PropTypes.string,
+    Pill : PropTypes.string,
+    Outline : PropTypes.string,
+    Alt : PropTypes.string,
+    textOn : PropTypes.string,
+    textOff : PropTypes.string,
+    withIcon : PropTypes.string,
+    Float : PropTypes.string
 }
 
 export default SidebeepSwitch;

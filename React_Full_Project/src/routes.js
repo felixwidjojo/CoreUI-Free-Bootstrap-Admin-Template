@@ -10,6 +10,9 @@ import SidebeepCards from './views/Components/SidebeepCards/'
 import SidebeepSwitch from './views/Components/SidebeepSwitch/'
 import SidebeepForms from './views/Components/SidebeepForms/'
 import SidebeepInput from './views/Components/SidebeepInput/'
+import SidebeepRadio from './views/Components/SidebeepRadio/'
+import SidebeepCheckbox from './views/Components/SidebeepCheckbox/'
+import SidebeepImageInput from './views/Components/SidebeepImageInput/'
 
 import Charts from './views/Charts/'
 import Dashboard from './views/Dashboard/'
@@ -43,6 +46,9 @@ export default (
         <Route path="sidebeepswitch" name="Sidebeep Switch" component={SidebeepSwitch}/>
         <Route path="sidebeepform" name="Sidebeep Forms" component={SidebeepForms}/>
         <Route path="sidebeepinput" name="Sidebeep Input" component={SidebeepInput}/>
+        <Route path="sidebeepradio" name="Sidebeep Radio" component={SidebeepRadio}/>
+        <Route path="sidebeepcheckbox" name="Sidebeep Checkbox" component={SidebeepCheckbox}/>
+        <Route path="sidebeepimageinput" name="Sidebeep Image Input" component={SidebeepImageInput}/>
         <Route path="buttons" name="Buttons" component={Buttons}/>
         <Route path="cards" name="Cards" component={Cards}/>  
         <Route path="forms" name="Forms" component={Forms}/>

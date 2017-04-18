@@ -1,46 +1,44 @@
 import React, { Component } from 'react';
-import SidebeepInput from '../SidebeepInput';
+import PropTypes from 'prop-types' ;
 
 class SidebeepForms extends Component {
     
 
     render(){
-        const
-            {
-                Row,
-                TitleFor,
-                Title,
-                LabelColumn,
-                InputColumn,
-            }
-            = this.props
 
         let formClass = `form-group`;
         let labelClass = `form-control-label`;
         let inputClass = ``;
-        let isDisabled = 'false';
 
-        if(this.props.Row == 'yes'){
+        if(this.props.Row === 'true'){
             formClass += ` row`;
         }
         
         if(this.props.LabelColumn != null){
-            labelClass += ` col-md-${LabelColumn}`;
+            labelClass += ` col-md-${this.props.LabelColumn}`;
         }
 
         if(this.props.InputColumn != null){
-            inputClass += ` col-md-${InputColumn}`;
+            inputClass += ` col-md-${this.props.InputColumn}`;
         }
 
         return(
             <div className={formClass}>
-                <label className={labelClass} htmlFor={TitleFor}>{Title}</label>
+                <label className={labelClass} htmlFor={this.props.HtmlFor}>{this.props.Title}</label>
                 <div className={inputClass}>
                     {this.props.children}
                 </div>
             </div>
         );
     }
+}
+
+SidebeepForms.PropTypes =
+{
+    HtmlFor : PropTypes.string,
+    Title : PropTypes.string.isRequired,
+    LabelColumn : PropTypes.string.isRequired,
+    InputColumn : PropTypes.string.isRequired,
 }
 
 export default SidebeepForms; 

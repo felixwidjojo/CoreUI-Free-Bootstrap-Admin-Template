@@ -1,6 +1,11 @@
 Sidebeep Button command list
 
 Type
+- button
+- submit
+- cancel
+
+ColorType
 - primary
 - secondary
 - success
@@ -66,7 +71,7 @@ Category
 - text
 - icon
 
-Type
+ColorType
 - primary
 - secondary
 - success
@@ -93,7 +98,7 @@ Size
 - xs
 
 Pill 
-- yes
+- true
 
 Float 
 - right
@@ -107,7 +112,7 @@ Can add Badge, Icon, Switch
 ColumnLarge, ColumnMedium, ColumnSmall
 - 1 until 12
 
-Type
+ColorType
 - primary
 - secondary
 - success
@@ -128,10 +133,10 @@ Type
 - accent-danger
 
 CenterText
-- yes
+- true
 
 Inverse 
-- yes
+- true
 
 Icon
 - from font awesome
@@ -149,18 +154,12 @@ SwitchType
 - warning
 - info
 - danger
-- outline-primary
-- outline-secondary
-- outline-success
-- outline-warning
-- outline-info
-- outline-danger
-- outline-primary-alt
-- outline-secondary-alt
-- outline-success-alt
-- outline-warning-alt
-- outline-info-alt
-- outline-danger-alt
+
+Outline
+- true
+
+Alt 
+- true
 
 SwitchSize
 - lg
@@ -169,7 +168,7 @@ SwitchSize
 - xs
 
 SwitchPill 
-- yes
+- true
 
 SwitchFloat 
 - right
