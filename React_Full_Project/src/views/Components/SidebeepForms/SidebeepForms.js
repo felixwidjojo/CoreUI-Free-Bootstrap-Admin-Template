@@ -22,6 +22,11 @@ class SidebeepForms extends Component {
             inputClass += ` col-md-${this.props.InputColumn}`;
         }
 
+        //Color of form
+        if(this.props.ColorType != null){
+            labelClass += ` has-${this.props.ColorType}`;
+        }
+
         return(
             <div className={formClass}>
                 <label className={labelClass} htmlFor={this.props.HtmlFor}>{this.props.Title}</label>
@@ -39,6 +44,8 @@ SidebeepForms.PropTypes =
     Title : PropTypes.string.isRequired,
     LabelColumn : PropTypes.string.isRequired,
     InputColumn : PropTypes.string.isRequired,
+    ColorType : PropTypes.string,
+    Row : PropTypes.string
 }
 
 export default SidebeepForms; 

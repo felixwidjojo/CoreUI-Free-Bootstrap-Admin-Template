@@ -37,9 +37,9 @@ class Forms extends Component {
                       <input type="text" className="form-control" id="ccnumber" placeholder="0000 0000 0000 0000"/>
                     </div>
                     <SidebeepForms Row="true" LabelColumn="3" InputColumn="9" TitleFor="asd" Title="ASD">
-                      <SidebeepInput Placeholder="asd goods" Type="text" ID="asd" Name="asd" isDisabled="false"  />
+                      <SidebeepInput Placeholder="asd goods" Type="text" ID="asd" Name="asd" isDisabled="false" AppendTitleLeft="asdasd"  />
                       <SidebeepRadio ID="asd" Name="asd" Value="asdasd" Title="asdasd" Inline="true"  />
-                      <SidebeepRadio ID="asd" Name="asd" Value="asdasd" Title="asdasd" Inline="true" />
+                      <SidebeepRadio ID="asd" Name="asd" Value="asdasd" Title="asdasd" Inline="false" />
                       <SidebeepImageInput Type="file" ID="asd" Name="asd" isMultiple="true" />
                     </SidebeepForms>
                      
