@@ -14,6 +14,11 @@ import SidebeepRadio from './views/Components/SidebeepRadio/'
 import SidebeepCheckbox from './views/Components/SidebeepCheckbox/'
 import SidebeepImageInput from './views/Components/SidebeepImageInput/'
 
+import SidebeepTabsNav from './views/Components/SidebeepTabsNav'
+import SidebeepTabsNavLink from './views/Components/SidebeepTabsNavLink'
+import SidebeepTabsContent from './views/Components/SidebeepTabsContent'
+import SidebeepTabsContentPane from './views/Components/SidebeepTabsContentPane'
+
 import Charts from './views/Charts/'
 import Dashboard from './views/Dashboard/'
 import Buttons from './views/Components/Buttons/'
@@ -49,6 +54,10 @@ export default (
         <Route path="sidebeepradio" name="Sidebeep Radio" component={SidebeepRadio}/>
         <Route path="sidebeepcheckbox" name="Sidebeep Checkbox" component={SidebeepCheckbox}/>
         <Route path="sidebeepimageinput" name="Sidebeep Image Input" component={SidebeepImageInput}/>
+        <Route path="sidebeeptabsnav" name="Sidebeep Tabs Nav" component={SidebeepTabsNav}/>
+        <Route path="sidebeeptabsnavlink" name="Sidebeep Tabs NavLink" component={SidebeepTabsNavLink}/>
+        <Route path="sidebeeptabscontent" name="Sidebeep Tabs Content" component={SidebeepTabsContent}/>
+        <Route path="sidebeeptabscontentpane" name="Sidebeep Tabs Content Pane" component={SidebeepTabsContentPane}/>
         <Route path="buttons" name="Buttons" component={Buttons}/>
         <Route path="cards" name="Cards" component={Cards}/>  
         <Route path="forms" name="Forms" component={Forms}/>

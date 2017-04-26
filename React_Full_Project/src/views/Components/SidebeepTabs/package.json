@@ -1,0 +1,6 @@
+{
+  "name": "SidebeepTabs",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SidebeepTabs.js"
+}

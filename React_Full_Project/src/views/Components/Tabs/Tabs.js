@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
+import SidebeepTabsNav from '../SidebeepTabsNav';
+import SidebeepTabsNavLink from '../SidebeepTabsNavLink';
+import SidebeepTabsContent from '../SidebeepTabsContent';
+import SidebeepTabsContentPane from '../SidebeepTabsContentPane';
 
 class Tabs extends Component {
 
@@ -26,6 +30,15 @@ class Tabs extends Component {
       <div className="animated fadeIn">
         <div className="row">
           <div className="col-md-6 mb-2">
+          <SidebeepTabs>
+            <SidebeepTabsContentPane ID="1"> Loprem ipsum lalala </SidebeepTabsContentPane>
+            <SidebeepTabsContentPane ID="2"> Loprem ipsum asdasdlalala </SidebeepTabsContentPane>
+            <SidebeepTabsContentPane ID="3"> Loprem ipsum qweqwelalala </SidebeepTabsContentPane>
+          </SidebeepTabs>
+          <SidebeepTabsContent>
+            
+          </SidebeepTabsContent>
+            
             <Nav tabs>
               <NavItem>
                 <NavLink
@@ -92,13 +105,14 @@ class Tabs extends Component {
               </NavItem>
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
-              <TabPane tabId="1">
-                1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <TabPane tabId="3">
+                2. Loasdipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </TabPane>
               <TabPane tabId="2">
-                2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </TabPane>
-              <TabPane tabId="3">
+              
+              <TabPane tabId="1">
                 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </TabPane>
             </TabContent>

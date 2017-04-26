@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import SidebeepModals from '../SidebeepModals';
 
 
 class Modals extends Component {
@@ -78,6 +79,7 @@ class Modals extends Component {
                 <i className="fa fa-align-justify"></i> Bootstrap Modals
               </div>
               <div className="card-block">
+                <SidebeepModals ButtonTitle="fuck me" Title="fuck you" PrimaryText="should fuck" SecondaryText="dont fuck">asdasdasd fuck sad </SidebeepModals>
                 <Button onClick={this.toggle}>Launch demo modal</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                   <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
@@ -117,7 +119,7 @@ class Modals extends Component {
                 <hr/>
 
                 <Button color="primary" onClick={this.togglePrimary}>Primary modal</Button>
-                <Modal isOpen={this.state.primary} toggle={this.togglePrimary} className={'modal-primary ' + this.props.className}>
+                <Modal isOpen={this.state.primary} toggle={this.togglePrimary} className={'modal-primary ' + 'modal-sm ' +this.props.className}>
                   <ModalHeader toggle={this.togglePrimary}>Modal title</ModalHeader>
                   <ModalBody>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
